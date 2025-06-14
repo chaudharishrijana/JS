@@ -1,0 +1,100 @@
+<!--
+page layout:
+1. head(contain nav tag)
+2. main = inside main tag we insert following tag i.e
+ a.section - a page section
+ b.article - a self contained content
+ c.aside - content aside from the content e.g ads
+note ; These are not necessary but create a structure layout and useful for SEO
+ 3. footer 
+
+
+
+ Link attributes : you can put any content inside an anchor tag (e.g image, headings etc all allowed)
+ <a href="/contact">Contact Us</a> // contact page open in some tab
+ <a href="/contact" target="blank"> contact us</a>  // open in new tab
+
+ dir tag = often used as a container for other div is a block level element and always takes full width
+
+ span tag = inline container which takes as much width as neccessary
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>EcoTips - Simple Eco-Friendly Living</title>
+    <meta name="description" content="EcoTips is your guide to eco-friendly and sustainable living with simple tips and tricks to help the planet." />
+    <meta name="keywords" content="eco-friendly, sustainable, green living, environment, tips" />
+    <meta name="author" content="EcoTips Team" />
+
+     <!-- Open Graph for social media sharing -->
+    <meta property="og:title" content="EcoTips - Simple Eco-Friendly Living" />
+    <meta property="og:description" content="Discover sustainable living tips to make your lifestyle greener." />
+    <meta property="og:image" content="https://i.pinimg.com/564x/3d/f6/1d/3df61d37e2e8a730b927d1c73e1b5bbf.jpg" />
+    <meta property="og:url" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBq6OziDC_Pi_2QFJxCj0FBYcbxVEP6w2eOOT6dh1BnMHWBxst33Bx5FAt42JiTIf2bY&usqp=CAU" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<!--header section -->
+<header>
+<h1>EcoTips</h1>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+
+<!-- main section -->
+ <main>
+<!-- about section -->
+    <section id="about">
+        <h2>About EcoTips</h2>
+        <p>EcoTips is a simple resource for individuals who want to live more sustainably. Our goal is to help you reduce your environmental impact with easy, everyday tips.</p>
+      <img src="https://media.licdn.com/dms/image/v2/D4E22AQGGoR47cDplBA/feedshare-shrink_800/B4EZSycFWgHgAk-/0/1738160495641?e=2147483647&v=beta&t=PRtV8r7cYdd9mS17F-3n-TtziSQ85dVlHQfkY6ZBLGw" alt="Green lifestyle image with plants and reusable items" width="600" /> </p>
+    </section>
+
+
+
+<!-- tips section -->
+ <section id="tips">
+    <h2>Top 3 Easy Eco-Friendly Tips</h2>
+      <article>
+        <h3>1. Use Reusable Bags</h3>
+        <p>Plastic bags are harmful to the environment. Bring your own cloth or reusable bags when shopping.</p>
+      </article>
+      <article>
+        <h3>2. Switch to LED Bulbs</h3>
+        <p>LED bulbs use less energy and last longer than traditional ones. They save money and the planet!</p>
+      </article>
+      <article>
+        <h3>3. Reduce Water Waste</h3>
+        <p>Turn off the tap while brushing your teeth and fix leaks promptly to conserve water.</p>
+      </article>
+ </section>
+ <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Want to contribute tips or ask questions? <a href="mailto:contact@ecotips.com">Email us</a> and we’ll get back to you.</p>
+    </section>
+ </main>
+
+
+<!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EcoTips. All rights reserved.</p>
+  </footer>
+
+    
+</body>
+</html>

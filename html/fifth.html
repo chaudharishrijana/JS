@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Vacation</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+
+    form {
+      background: white;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #00b4d8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+    <h1>BOOK YOUR VACATION</h1>
+    <form action="/submiting-booking" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+    <label for="destination">Select Destination:</label>
+        <select id="destination" name="destination" required>
+        <option value="">-- Choose a Destination --</option>
+        <option value="maldives">Maldives</option>
+        <option value="bali">Bali</option>
+        <option value="paris">Paris</option>
+        <option value="australia">Australia</option>
+        <option value="newyork">New York</option>
+        <option value="usa">USA</option>
+        </select>
+    <label for="travelers">Number of Travelers:</label>
+        <input type="number" id="travelers" name="travelers" min="1" required />
+
+
+        <label for="departure">Departure Date:</label>
+        <input type="date" id="departure" name="departure" required />
+    <label for="return">Return Date:</label>
+        <input type="date" id="return" name="return" required />
+
+    <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Any specific requests or comments..."></textarea>
+
+        <button type="submit">Book Vacation</button>
+
+    </form>
+
+    
+    
+</body>
+</html>

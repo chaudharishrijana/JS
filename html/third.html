@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Click Image to Open Google</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    img {
+      width: 200px; /* Resize image as needed */
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the image to open </h1>
+
+  <!-- Wrap the image in an anchor tag that links to Google -->
+  <a href="https://www.google.com" target="_blank">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+         alt="Google Logo"/>
+  </a>
+
+  <a href="https://youtube.com" target="_blank">
+  <img src="data:image/png;base64,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" alt="Youtube Logo">
+</a>
+
+<h2> My Top Bookmarked Websites</h2>
+<div class="bookmark-container">
+    <div class="bookmark">
+        <a href="https://www.google.com" target="_blank">
+        <img src="https://www.google.com/favicon.ico" alt="Google" />
+        Google
+        </a>
+    </div>
+    <div class="bookmark">
+        <a href="https://www.yutube.com" target="_blank">
+        <img src="https://www.youtube.com/favicon.ico" alt="Youtube" />
+        Youtube
+        </a>
+    </div>
+    <div class="bookmark">
+        <a href="https://www.facebook.com" target="_blank">
+        <img src="https://www.facebook.com/favicon.ico" alt="Facebook" />
+        Facebook
+        </a>
+    </div>
+    <div class="bookmark">
+        <a href="https://www.linkedin.com" target="_blank">
+        <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" />
+        LinkedIn
+        </a>
+    </div>
+    <div class="bookmark">
+        <a href="https://www.github.com" target="_blank">
+        <img src="https://www.github.com/favicon.ico" alt="GitHub" />
+        GitHub
+        </a>
+    </div>
+    <div class="bookmark">
+        <a href="https://www.instagram.com" target="_blank">
+        <img src="https://www.instagram.com/favicon.ico" alt="Instagram" />
+        Instagram
+        </a>
+    </div>
+<h1> Embedded YouTube Video</h1>
+    <div class="video-container">
+    <!-- Embed YouTube video here -->
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
