@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: burlywood;
+}
+
+h1 {
+  background-color: darkcyan;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: darkcyan;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: darkcyan;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.comp-choice-display {
+    margin-top: 20px;
+}
+
+.comp-choice-display h3 {
+    color: #081b31;
+    margin-bottom: 10px;
+}
+
+#comp-choice-img {
+    border: 2px solid #081b31;
+    border-radius: 10px;
+}
+
+
+.refresh-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#refresh-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;         /* Makes the button circular */
+    background-color: #081b31;  /* Dark blue background */
+    color: white;
+    font-size: 24px;            /* Bigger icon/text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#refresh-btn:hover {
+    background-color: #0d2a4d;
+    transform: scale(1.1);      /* Slight zoom on hover */
+}
