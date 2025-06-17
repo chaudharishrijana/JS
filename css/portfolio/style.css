@@ -1,0 +1,131 @@
+/* Resetting the Browser Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+/* Container and Card Styles */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    border-radius: 24px;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: clamp(320px, 70vw, 740px);
+    min-width: min(320px, 100vw);
+    flex-direction: column;
+}
+
+/* Background and Image Styling */
+.background {
+    flex: 1 1 250px;
+    display: grid;
+    place-items: center;
+    background-color: #ebeffa;
+    border-radius: 24px 24px 0 0;
+}
+
+.background .image-wrapper {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid white;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Content Styling */
+.content {
+    flex: 3 1 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-weight: 700;
+    margin-bottom: clamp(0.35rem, 2vh, 0.55rem);
+    color: #29283f;
+}
+
+.content > p {
+    font-size: clamp(1rem, 1.7vw, 1.1rem);
+    font-weight: 500;
+    margin: 6px 0;
+}
+
+.content a {
+    text-decoration: none;
+    color: #7370f4;
+    font-weight: 600;
+}
+
+/* Chips and Buttons */
+.chips {
+    display: flex;
+    list-style-type: none;
+    padding: 12px 0;
+    justify-content: space-around;
+}
+
+.chip {
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #eaeaec;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.chip:hover {
+    background-color: #7370f4;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-button {
+    border-top: 1px solid #eaeaec;
+    padding-top: 16px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.action-button a {
+    background-color: #29283f;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.action-button a:hover {
+    transform: scale(1.05);
+}
+
+.action-button a.secondary {
+    background-color: inherit;
+    color: #29283f;
+    border: 1px solid #29283f;
+}

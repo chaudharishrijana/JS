@@ -1,0 +1,349 @@
+/* to link css with html :   <link rel="stylesheet" href="style.css">  */
+
+/* how to convert <span> to a block- level element */
+
+span{
+display:block;
+}  
+
+/* for horizontally center and vertically center   */
+
+.container{
+    justify-content: center; /* horizontal*/
+    align-items: center;  /* vertical*/
+    line-height:50px;
+
+}   
+
+
+/* dotted border style */
+div{
+    background-color:#eef0f1;
+    width:150px;
+    height:100px;
+    border-style: dotted;
+    border-width:5px;
+    border-color:#e74c3c;
+
+}
+
+
+/* border width and radius */
+div{
+    border-radius:50%;
+    border-style:solid;
+    width: 200px;
+    height:200px;
+    border-width:10px;
+    color:green;
+   
+
+}
+
+/* Adding Padding and Background Color   for 4 value of  padding( top,right,bottom,left )*/
+
+div{
+    padding:20px;
+    background-color:#8e44ad;
+}
+
+/* Complex Box Model*/
+
+div{
+    margin:20px;
+    border-style:solid;
+    border-width:5px;
+    border-color:#34495e;
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    background-color:#9b59b6;
+    padding:50px;
+    
+
+}
+
+
+/*Styling Multiple Elements with Classes for classes dot is necessary */
+
+
+.box1 {
+  background-color: #3498db; 
+  width: 100px;
+  height: 100px;
+}
+
+.box2 {
+  background-color: #e74c3c; 
+  width: 100px;
+  height: 100px;
+}
+
+/* Selecting with IDs hastag(#) is necessary */
+
+#first{
+    background-color:#2ecc71;
+}
+    
+#second{
+    background-color:#f1c40f;
+    
+}
+
+
+/*CSS Combinators*/
+
+* {
+  font-size: 24px;
+}
+
+.profile-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.profile-section > p {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+}
+
+li:nth-child(2),
+li:nth-child(3) {
+  font-size: 18px;
+  color: #777;
+}
+
+
+/*How can you override the specificity of CSS selectors?
+
+ans: By using the !important keyword.  */
+
+
+.box {
+  background-color: #e67e22 !important; 
+}
+
+/*Absolute Positioning  */
+.product-card {
+    position: relative; /* Needed for absolute positioning inside */
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.sale-badge {
+    position: absolute; /* Positioning inside .product-card */
+    top: 10px;           /* 10px from the top */
+    right: 10px;         /* 10px from the right */
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/*Positioning*/
+
+
+.parent {
+  position: relative;           /* Set positioning context for child */
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;    /* Light gray */
+}
+
+.child {
+  position: absolute;           /* Position relative to .parent */
+  top: 60px;                    /* 60px from top of parent */
+  left: 20px;                   /* 20px from left of parent */
+  width: 100px;
+  height: 100px;
+  background-color: #ff5733;    /* Orange-red */
+}
+
+
+/* z-index*/
+
+
+.outer {
+  position: relative;  /* Make z-index effective */
+  z-index: 2;          /* Higher z-index */
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+.inner {
+  position: relative;  /* Make z-index effective */
+  z-index: 1;          /* Lower z-index */
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+}
+
+
+/*  Floating Elements*/
+
+.container {
+  width: 500px;
+  height: 300px;
+  background-color: #f0f0f0; /* optional for visibility */
+  overflow: hidden; /* Clear floats inside container */
+}
+
+.box1 {
+  float: left;
+  width: 150px;
+  height: 100px;
+  background-color: #ff5733;
+}
+
+.box2 {
+  float: right;
+  width: 150px;
+  height: 100px;
+  background-color: #c70039;
+}
+
+
+
+/*Create a Navbar*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 200vh;
+}
+
+.navbar {
+    background: #111;
+    height: 70px;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin: 4px 10px;
+}
+
+.logo {
+    font-size: 20px;
+    float: left;
+}
+
+.navbar-items {
+    float: right;
+}
+
+.offer {
+    position: relative;
+}
+
+.offer-badge {
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px 8px;
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+    right: -25px;
+}
+
+
+
+/* Selecting and Styling the Second Child */
+
+div:nth-child(2) {
+  background-color: #8e44ad; /* Purple shade */
+}
+
+
+/*Style Table*/
+
+/* Collapse borders so they appear as single lines */
+table {
+  border-collapse: collapse;
+}
+
+/* Add 1px solid black border to all table rows and cells */
+th, td, tr {
+  border: 1px solid black;
+}
+
+/* Change background color of the header row */
+tr:first-child {
+  background-color: #4caf50;
+  
+}
+
+
+/* style list */
+ul {
+  list-style-type: square; /* Make bullet points square-shaped */
+}
+
+ul li {
+  color: #ff5733;          /* Orange text color */
+  padding-left: 10px;      /* Left padding for each list item */
+}
+
+
+/* flexbox basics */
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: #4caf50;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* column flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+}

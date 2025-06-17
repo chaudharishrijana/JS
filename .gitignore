@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 .env
+=======
+<<<<<<< HEAD
+env/
+=======
+.env
+>>>>>>> 30696f4 (Stop tracking .env and add to .gitignore)
+>>>>>>> ea5d7dd
